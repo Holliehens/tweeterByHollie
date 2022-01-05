@@ -3,33 +3,58 @@
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
-html {
+ /* html {
   box-sizing: border-box;
 }
 *, *:before, *:after {
   box-sizing: inherit;
+} */
+
+nav {
+  font-family: Bungee;
+  height: 120px;
+  background-color: #4056A1;
+  color: #ffff;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  
+  
+  
 }
 
-/* h1 {
-  font-family: Bungee;
-} */
+.side {
+  text-align: center;
+  
+}
+
+.side h3 {
+  margin: 0;
+  font-size: 20px;
+  
+}
+.Tweeter {
+  font-size: 50px
+}
+
+
 /*
  * Global layout stuff
  */
 
-body {
+/* body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
   font-family: Source Sans Pro;
-}
-
-main {
-  width: 90%;
-  align-items: center;
-  background-color: #f4f1ec;
-
-}
+} */
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
