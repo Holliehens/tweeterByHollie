@@ -1,0 +1,30 @@
+#tweet-text {
+  background: transparent;
+  width: 100%;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 5px solid black; 
+  outline: 0; 
+}
+
+.new-tweet {
+  width: 90%;
+  margin: auto;
+}
+
+.tweet-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tweet-bottom button {
+  background-color: #4056A1;
+  text-transform: uppercase;
+  color: white;
+  font-family: Bungee;
+
+}
+.tweet-bottom output {
+  font-family: Bungee;
+}
