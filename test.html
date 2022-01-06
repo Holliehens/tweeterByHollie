@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <title>My Page</title>
+  </head>
+  <body>
+    <div id="div-one">Click me!</div>
+    <div id="div-two">No! Click Me!</div>
+    <textarea id="text-area" placeholder="Enter Text Here"></textarea>
+  </body>
+  <script>
+    const printMessage = () => {
+  console.log("You clicked on div 2.");
+};
+    const div1 = document.getElementById("div-one");
+
+// when div1 is clicked, run the function
+div1.addEventListener("click", () => {
+  console.log("You clicked on div 1.");
+});
+const div2 = document.getElementById("div-two");
+
+// when div2 is clicked, run the function
+div2.addEventListener('click', printMessage);
+
+document.addEventListener("dblclick", (event) => {
+  const x = event.screenX;
+  const y = event.screenY;
+  console.log("I'm X", x);
+  console.log("I'm Y", y);
+  // your code here
+});
+
+const textArea = document.getElementById("text-area");
+textArea.addEventListener('input', (event) => {
+  console.log("You have Input Something", event.data);
+  
+}); 
+textArea.addEventListener('keyup', (event) => {
+  console.log('Keyup', event);
+});
+textArea.addEventListener('keypress', (event) => {
+  console.log('Keypress', event);
+});
+textArea.addEventListener('keydown', (event) => {
+  console.log('Keydown', event);
+});
+textArea.addEventListener('keydown', (event) => {
+  console.log('Keydown', event);
+});
+</script>
+</html>
+<!-- 
+Removing event listeners once they are no longer needed is a best practice (especially in long-running Web applications). To do this, use the element.removeEventListener() method:
+
+element.removeEventListener(<event-name>, <callback>, <use-capture>);
+
+
+
+var element = document.getElementById('element');
+
+function callback() {
+  alert('Hello once');
+  element.removeEventListener('click', callback);
+}
+
+// Add listener
+element.addEventListener('click', callback);
+
+
+-->
