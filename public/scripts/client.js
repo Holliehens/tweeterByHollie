@@ -62,15 +62,17 @@ $(document).ready(() => {
     if ($("#tweet-text").val().length > 140) {
       $(".err-msg").slideDown();
       $(".err-msg").html("<span>Sorry! Characters Exceed 140");
+      return false;
     }
 
     $.ajax({
       type: "POST",
       url: "/tweets",
       data: $("form").serialize(),
-      success: function () {
+      success: function (response) {
         $("#tweet-text").val("");
         console.log("It Tweeted!");
+        $(".tweet-container").empty();
         loadTweets();
       },
     });
@@ -78,7 +80,7 @@ $(document).ready(() => {
 
   function loadTweets() {
     $.get("/tweets", function (data, status) {
-      console.log(data);
+      console.log("LoadTweetData", data);
       renderTweets(data.reverse());
     });
   }
