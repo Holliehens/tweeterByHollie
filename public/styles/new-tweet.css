@@ -4,8 +4,8 @@
   border-top: 0;
   border-left: 0;
   border-right: 0;
-  border-bottom: 5px solid black; 
-  outline: 0; 
+  border-bottom: 5px solid rgba(31, 30, 30, 0.7);
+  outline: 0;
 }
 
 .new-tweet {
@@ -19,12 +19,79 @@
 }
 
 .tweet-bottom button {
-  background-color: #4056A1;
+  background-color: #4056a1;
   text-transform: uppercase;
   color: white;
   font-family: Bungee;
-
 }
 .tweet-bottom output {
   font-family: Bungee;
+}
+
+.tweet {
+  border: 5px solid rgba(31, 30, 30, 0.7);
+  width: 90%;
+  margin: auto;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.tweet:hover {
+  box-shadow: 5px 4px 3px 4px #4056a1;
+}
+
+.tweet-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em;
+}
+
+.tweet-header img {
+  width: 2.5em;
+  height: 2.5em;
+  margin-right: 1em;
+}
+
+.profile {
+  display: flex;
+}
+
+.tweet-body {
+  padding: 0.5em;
+}
+
+.tweet-body-border {
+  background-color: rgba(31, 30, 30, 0.7);
+  height: 5px;
+}
+
+.tweet-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em 1.8em;
+  font-size: 12px;
+  margin-top: -10px;
+}
+
+.tweet-handle {
+  opacity: 0.5;
+  font-size: 17px;
+  color: #4056a1;
+}
+
+.fas {
+  color: #4056a1;
+}
+
+.fas:hover {
+  color: rgba(255, 217, 0, 0.945);
+}
+
+.err-msg {
+  display: none;
+  text-align: center;
+  color: red;
+  border: 5px solid;
+  font-weight: bold;
+  margin-top: 1em;
 }

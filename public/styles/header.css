@@ -1,8 +1,20 @@
 header {
   width: 100%;
-  margin-top: 120px;
   height: 400px;
   background-color: #6ef5ee;
   background-image: url("https://www.transparenttextures.com/patterns/fresh-snow.png");
-  ;
+  margin-top: 5em;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  color: rgb(40, 8, 99);
+}
+
+@media screen and (min-width: 1024px) {
+  .header-container {
+    margin-top: 7em;
+    padding-top: 1em;
+  }
 }
