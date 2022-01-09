@@ -16,4 +16,10 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+
+
+## Screenshots
+
 ![Tweeter-desktop](https://github.com/Holliehens/tweeterByHollie/blob/master/docs/Tweeter-desktop.png?raw=true)
+![Tweeter-mobile](https://github.com/Holliehens/tweeterByHollie/blob/master/docs/Tweet-mobile.png?raw=true)
+![Tweet-box](https://github.com/Holliehens/tweeterByHollie/blob/master/docs/Tweet-box.png?raw=true)
