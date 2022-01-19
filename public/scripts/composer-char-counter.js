@@ -1,5 +1,5 @@
 $(document).ready(() => {
-  $("#tweet-text").on("keyup", () => {
+  $("#tweet-text").on("input", () => {
     const tweetElement = $("#tweet-text");
     const tweetText = tweetElement.val();
 

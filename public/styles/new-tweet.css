@@ -58,6 +58,7 @@
 
 .tweet-body {
   padding: 0.5em;
+  word-wrap: break-word;
 }
 
 .tweet-body-border {
